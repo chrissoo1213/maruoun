@@ -75,7 +75,7 @@ function BackgroundSlideshow({
               backgroundImage: `url(${src})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              filter: "brightness(1.12) saturate(1.08)",
+              filter: "brightness(1.05) saturate(1.05)",
             }}
           />
         </motion.div>
@@ -194,7 +194,7 @@ function CinematicIntro({ onDone }) {
                 backgroundPosition: "center",
               }}
             />
-            <div className="absolute inset-0 bg-black/25" />
+            <div className="absolute inset-0 bg-black/35" />
           </motion.div>
         </motion.div>
       )}
@@ -294,10 +294,10 @@ function Slide2Invitation() {
       <BackgroundSlideshow photos={[PHOTOS[1], PHOTOS[2]]} interval={7000} />
       <div className="relative z-10 px-6 w-full flex justify-center">
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           viewport={{ once: true }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="glass rounded-3xl p-8 md:p-10 max-w-2xl w-full text-center"
         >
           <p className="tracking-luxury text-[11px] uppercase text-white/80">
@@ -305,11 +305,11 @@ function Slide2Invitation() {
           </p>
 
           <div className="mt-8 space-y-4">
-            <p className="font-script text-champagne text-2xl sm:text-3xl md:text-4xl leading-snug">
+            <p className="font-script text-champagne text-xl sm:text-2xl md:text-3xl leading-snug">
               Boutrous Touma<span className="mx-3 text-white">&amp;</span> Wafaa Jarjour
             </p>
             <div className="mx-auto h-px w-24 bg-white/30" />
-            <p className="font-script text-champagne text-2xl sm:text-3xl md:text-4xl leading-snug mt-2">
+            <p className="font-script text-champagne text-xl sm:text-2xl md:text-3xl leading-snug mt-2">
               Robert El Hajj<span className="mx-3 text-white">&amp;</span> Gisele El Alam
             </p>
           </div>
@@ -401,9 +401,9 @@ function GlassEventCard({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
+      initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
       whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-      transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       viewport={{ once: true }}
       className="glass rounded-3xl p-8 md:p-10 max-w-md w-full text-center"
     >
@@ -449,9 +449,9 @@ function Slide5BeforeCeremony() {
       />
       <div className="relative z-10 px-6 w-full flex justify-center">
         <motion.div
-          initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
+          initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
           className="glass rounded-3xl p-8 md:p-10 max-w-md w-full text-center"
         >
@@ -812,9 +812,7 @@ function SlideRSVP({ guests, setGuests }) {
               className="w-full max-w-md"
             >
               <div className="text-center mb-8">
-                <p className="tracking-luxury text-white/80 text-[11px] uppercase">
-                  Kindly Respond
-                </p>
+                
 
                 <h2 className="font-script text-champagne text-5xl md:text-6xl mt-2">
                   RSVP
