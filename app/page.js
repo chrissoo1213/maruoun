@@ -819,7 +819,7 @@ function SlideRSVP({ guests, setGuests }) {
                 </h2>
 
                 <p className="text-white/80 font-serif italic mt-3 text-sm">
-                  Please reply by July 1, 2026
+                  Please reply by July 15, 2026
                 </p>
               </div>
 
