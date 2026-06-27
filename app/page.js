@@ -305,11 +305,11 @@ function Slide2Invitation() {
           </p>
 
           <div className="mt-8 space-y-4">
-            <p className="font-script text-champagne text-xl sm:text-2xl md:text-3xl leading-snug">
+            <p className="font-script text-champagne text-[1.375rem] sm:text-[1.65rem] md:text-[2.0625rem] leading-snug">
               Boutrous Touma<span className="mx-3 text-white">&amp;</span> Wafaa Jarjour
             </p>
             <div className="mx-auto h-px w-24 bg-white/30" />
-            <p className="font-script text-champagne text-xl sm:text-2xl md:text-3xl leading-snug mt-2">
+            <p className="font-script text-champagne text-[1.375rem] sm:text-[1.65rem] md:text-[2.0625rem] leading-snug mt-2">
               Robert El Hajj<span className="mx-3 text-white">&amp;</span> Gisele El Alam
             </p>
           </div>
@@ -854,8 +854,8 @@ function SlideRSVP({ guests, setGuests }) {
                         onClick={() => setStatus(i, "Declined")}
                         className={`px-3 py-1.5 rounded-full text-[10px] tracking-luxury uppercase border transition-all ${
                           g.status === "Declined"
-                            ? "bg-white/15 text-white border-white/70"
-                            : "border-white/40 text-white hover:border-white/70"
+                            ? "bg-white/90 text-black border-white shadow-[0_0_20px_rgba(255,255,255,0.25)]"
+                            : "border-white/40 text-white hover:border-white/70 active:bg-white/30 active:border-white"
                         }`}
                       >
                         <X size={10} className="inline mr-1" />
