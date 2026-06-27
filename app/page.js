@@ -305,13 +305,17 @@ function Slide2Invitation() {
           </p>
 
           <div className="mt-8 space-y-4">
-            <p className="font-script text-champagne text-[1.375rem] sm:text-[1.65rem] md:text-[2.0625rem] leading-snug">
-              Boutrous Touma<span className="mx-3 text-white">&amp;</span> Wafaa Jarjour
-            </p>
+            <div className="font-script text-champagne text-[1.306rem] sm:text-[1.568rem] md:text-[1.959rem] leading-snug flex flex-col md:flex-row items-center justify-center gap-3">
+              <span className="text-center">Boutrous Touma</span>
+              <span className="text-white">&amp;</span>
+              <span className="text-center">Wafaa Jarjour</span>
+            </div>
             <div className="mx-auto h-px w-24 bg-white/30" />
-            <p className="font-script text-champagne text-[1.375rem] sm:text-[1.65rem] md:text-[2.0625rem] leading-snug mt-2">
-              Robert El Hajj<span className="mx-3 text-white">&amp;</span> Gisele El Alam
-            </p>
+            <div className="font-script text-champagne text-[1.306rem] sm:text-[1.568rem] md:text-[1.959rem] leading-snug flex flex-col md:flex-row items-center justify-center gap-3 mt-2">
+              <span className="text-center">Robert El Hajj</span>
+              <span className="text-white">&amp;</span>
+              <span className="text-center">Gisele El Alam</span>
+            </div>
           </div>
 
           <div className="mx-auto my-7 h-px w-24 bg-champagne/70" />
@@ -494,7 +498,7 @@ function Slide6Ceremony() {
         <GlassEventCard
           kicker="The Ceremony"
           title="Vows"
-          date="Monday, July 23, 2026"
+          date="Thursday, July 23, 2026"
           time="6:00 pm — 7:00 pm"
           venue="Hemlaya"
           city="Lebanon"
@@ -518,7 +522,7 @@ function Slide7Reception() {
         <GlassEventCard
           kicker="The Celebration"
           title="Reception"
-          date="Monday, July 23, 2026"
+          date="Thursday, July 23, 2026"
           time="7:30 pm onwards"
           venue="Blanc De Chêne"
           city="Lebanon"
